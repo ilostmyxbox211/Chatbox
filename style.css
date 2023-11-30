@@ -1,0 +1,78 @@
+/* Add these styles to your existing style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    max-width: 100%;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-body {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    margin-left: auto; /* Move user's message to the right */
+    justify-content: flex-end; /* Align messages to the end (right) */
+    width: 60%; /* Make the user's message take up 60% of the width */
+}
+
+.jamie-message {
+    background-color: #e5e5ea;
+    align-self: flex-start;
+    margin-right: auto; /* Move Jamie's message to the right */
+    width: 60%; /* Make Jamie's message take up 60% of the width */
+}
+
+.timestamp {
+    font-size: 10px;
+    color: #999;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #f4f4f4;
+}
+
+#send-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 8px;
+    cursor: pointer;
+}
